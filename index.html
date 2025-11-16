@@ -1,0 +1,43 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/main.css">
+    <title>Document</title>
+</head>
+<body>
+ <main class="app">
+    <header class="app-header">
+      <h1>To-Do List</h1>
+      <p class="subtitle">Oddiy, tez va saqlanadigan</p>
+    </header>
+
+    <section class="controls">
+      <form id="task-form" class="task-form" autocomplete="off">
+        <input id="task-input" type="text" placeholder="Yangi vazifa" required />
+        <button id="add-btn" type="submit">Qo'shish</button>
+      </form>
+
+      <div class="tools">
+        <input id="search-input" type="search" placeholder="Vazifalarni qidirish..." />
+        <button id="clear-all" title="Barcha vazifalarni o'chirish">Delete all</button>
+      </div>
+
+      <div class="summary">
+        <span id="total">Total tasks: 0</span>
+      </div>
+    </section>
+
+    <section>
+      <ul id="task-list" class="task-list" aria-live="polite"></ul>
+    </section>
+
+    
+  </main>
+
+
+  <script src="./js/main.js"></script>  
+</body>
+</html>
